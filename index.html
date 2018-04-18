@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>dsdunn static comp 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <a class="hamburger"><i class="fas fa-caret-left"></i><i class="fas fa-bars"></i></a>
+      <i class="fas fa-search"></i>
+      <input placeholder="Search for a job, task, or resume" aria-label="Search for a job, task, or resume" role="search">
+      <a class="user-icon" aria-label="user"><i class="fas fa-user"></i></a>
+      <a><i class="fas fa-calendar-check" aria-label="calendar"></i></a>
+      <a><i class="fas fa-th"></i></a>
+    </div>
+    <div class="header-main">
+      <section class="title">
+        <h1>Customer Service Representative</h1>
+        <p class="location">San Francisco, CA -
+          <a class="preview">Preview this post</a>
+        </p>
+      </section>
+      <section class="header-buttons">
+        <a class="open"><i class="fas fa-circle"></i>open</a>
+        <a class="round"><i class="fas fa-bookmark" aria-label="bookmark"></i></a>
+        <a class="round"><i class="fas fa-pencil-alt" aria-label="edit"></i></a>
+        <a class="round"><i class="fas fa-trash-alt" aria-label="delete"></i></a>
+      </section>
+    </div>
+    <menu class="header-bottom">
+      <a class="menu-active"><i class="fas fa-caret-down"></i> summary</a>
+      <a>applicants</a>
+      <a>job board</a>
+      <a>interviews</a>
+      <a>activity</a>
+      <a>broadcast</a>
+      <a>notifications</a>
+    </menu>
+  </header>
+  <aside class="sidebar" role="navigation">
+    <section class="sidebar-top">
+    <img class="chaplin-photo" src="images/chaplin.jpg" alt="black and white photo of Charlie Chaplin from the shoulders up">
+    <a class="name">Charlie Chaplin <i class="fas fa-caret-down"></i></a>
+    </section>
+    <section class="sidebar-main">
+      <p>Main</p>
+      <a><i class="fas fa-home"></i> home</a>
+      <a><i class="fas fa-briefcase"></i> jobs</a>
+      <a><i class="fas fa-file-alt"></i> resumes</a>
+      <a><i class="fas fa-clipboard-list"></i> tasks</a>
+      <a><i class="far fa-calendar-plus"></i> calendar</a>
+    </section>
+    <section class="sidebar-admin">
+      <p>Admin</p>
+      <a><i class="fas fa-users"></i> users</a>
+      <a><i class="fas fa-map-marker"></i> locations</a>
+      <a><i class="fas fa-code-branch"></i> workflows</a>
+      <a><i class="far fa-clipboard"></i> job boards</a>
+      <a><i class="fas fa-plus"></i> social</a>
+    </section>
+    <section class="sidebar-categories">
+      <div>
+        <input id="administrative-category" type="checkbox">
+        <label for="administrative-category">Administrative<label>
+      </div>
+      <div>
+        <input id="design-category" type="checkbox" class="checkbox checkbox-design">
+        <label for="design-category">Design</label>
+      </div>
+      <div>
+        <input id="executive-category" type="checkbox">
+        <label for="executive-category">Executive</label>
+      </div>
+      <div>
+        <input id="human-recources-category" type="checkbox">
+        <label for="human-recources-category">Human Recources</label>
+      </div>
+    </section>
+  </aside>
+  <main>
+    <section class="graph-section" aria-label="graphs displaying applicant statistics">
+        <div class="circles-container">
+          <article class="circle-graphs">
+            <svg class="circle" width="13vw" height="13vw" viewBox="0 0 120 120" aria-label="forwards">
+              <circle cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke="#E3E4E6" />
+              <circle cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke="#62D5B8" stroke-dasharray="78.037 261.254" stroke-dashoffset="-84.823" />
+              <g class="chart-text">
+                <text x="50%" y="50%" class="chart-number">
+                  1150
+                </text>
+                <text x="50%" y="50%" class="chart-label">
+                  Forwards
+                </text>
+              </g>
+            </svg>
+            <svg class="circle" width="13vw" height="13vw" viewBox="0 0 120 120" aria-label="interviews">
+              <circle cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke="#E3E4E6" />
+              <circle cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke="#579CE8" stroke-dasharray="288.398 50.894" stroke-dashoffset="-84.823"/>
+              <g class="chart-text">
+                <text x="50%" y="50%" class="chart-number">
+                  4250
+                </text>
+                <text x="50%" y="50%" class="chart-label">
+                  Interviews
+                </text>
+              </g>
+            </svg>
+            <svg class="circle" width="13vw" height="13vw" viewBox="0 0 120 120" aria-label="applicants">
+              <circle cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke="#E3E4E6" />
+              <circle cx="60" cy="60" r="54" fill="none" stroke-width="10" stroke="#918BF3" stroke-dasharray="179.825 159.467" stroke-dashoffset="-84.823"/>
+              <g class="chart-text">
+                <text x="50%" y="50%" class="chart-number">
+                  2650
+                </text>
+                <text x="50%" y="50%" class="chart-label">
+                  Applicants
+                </text>
+              </g>
+            </svg>
+          </article>
+          <h2 class="graph-label circle-label">totals-<span>Out of 5,373 views</span></h2>
+        </div>
+        <div class="bar-graph-container">
+          <article class="bar-graph"><img src="images/graph.png"></article>
+          <h2 class="graph-label bar-label">applicants/day</h2>
+      </div>
+    </section>
+    <div class="divider" aria-hidden>
+      <hr/>
+      <button class="divider-icon">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+      <hr/>
+    </div>
+    <section class="post" aria-label="job post information">
+      <article class="post-active border">
+        <h2>Job Description</h2>
+        <p><span class="post-edit"><i class="fas fa-pencil-alt"></i> Edit</span></p>
+      </article>
+      <article class="border">
+        <h2>position title</h2>
+        <p> Customer Service Representative</p>
+      </article>
+      <article class="border">
+        <h2>location</h2>
+        <p>San Francisco, CA</p>
+      </article>
+      <article class="border">
+        <h2>employment type</h2>
+        <p>full-time</p>
+      </article>
+      <article class="border">
+        <h2>experience</h2>
+        <p>Mid-level</p>
+      </article>
+      <article class="border">
+        <h2>status</h2>
+        <p>description</p>
+      </article>
+      <article class="border">
+        <h2 class="description">description</h2>
+        <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a back-handspring and eating a ham sandwich.</p>
+      </article>
+      <article class="border">
+        <h2>hiring lead</h2>
+        <p><img>Tony Tiger</p>
+      </article>
+      <article>
+        <h2>approved salary</h2>
+        <p class="bold">$58,000</p>
+      </article>
+    </section>
+    <section class="main-aside" aria-label="share or link to this job">
+      <div class="social-container">
+        <button class="social facebook"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
+        <button class="social twitter"><i class="fab fa-twitter"></i>Tweet this job</button>
+        <button class="social linkedin"><i class="fab fa-linkedin-in"></i>Post this to Linkedin</button>
+      </div>
+      <article class="link">
+        <h3><i class="fas fa-link"></i>Link to this Job</h3>
+        <p>All the fun stuff in the basement. Does the sun still exist out there in the world?</p>
+        <div class="copy-box">
+          <input class="copy" type="text" value="https://allthesuninmydreams">
+          <button class="copy-button">Copy</button>
+        </div>
+      </article>
+      <article class="widget">
+        <h3><i class="fas fa-globe"></i>Use the Button Widget</h3>
+        <p>All the fun stuff in the basement. Does the sun still exist out there in the world?</p>
+        <div class="copy-box">
+          <input class="copy" type="text" value="https://allthesuninmydreams">
+          <button class="copy-button">Copy</button>
+        </div>
+      </article>
+      <article>
+        <h3><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h3>
+        <p>All the fun stuff in the basement. Does the sun still exist out there in the world?</p>
+        <input class="email" type="email" value="https://allthesuninmydreams" aria-label="type in your email address for contact">
+      </article>
+    </section>
+  </main>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</body>
+</html>
